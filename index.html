@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Calculator V1</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="inputDiv" id="input">
+        <!-- <p contenteditable="true">Editable</p> -->
+        <p></p>
+      </div>
+      <div class="resultDiv" id="result"></div>
+      <div class="numRow">
+        <div class="num" onclick="input('7')">7</div>
+        <div class="num" onclick="input('8')">8</div>
+        <div class="num" onclick="input('9')">9</div>
+        <div class="op" onclick="input('+')">+</div>
+      </div>
+      <div class="numRow">
+        <div class="num" onclick="input('4')">4</div>
+        <div class="num" onclick="input('5')">5</div>
+        <div class="num" onclick="input('6')">6</div>
+        <div class="op" onclick="input('-')">-</div>
+      </div>
+      <div class="numRow">
+        <div class="num" onclick="input('1')">1</div>
+        <div class="num" onclick="input('2')">2</div>
+        <div class="num" onclick="input('3')">3</div>
+        <div class="op" onclick="input('*')">*</div>
+      </div>
+      <div class="numRow">
+        <div class="num clear" onclick="clearOutput()">C</div>
+        <div class="num" onclick="input('0')">0</div>
+        <div class="num equal" onclick="calculateOutput()">=</div>
+        <div class="op" onclick="input('/')">/</div>
+      </div>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
